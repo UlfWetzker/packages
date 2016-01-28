@@ -22,6 +22,8 @@ PKG_LICENSE_FILES:=LICENSE
 PKG_BUILD_DEPENDS:=protobuf/host
 PKG_USE_MIPS16:=0# MIPS16 prevents protobuf's usage of the 'sync' asm-opcode
 
+PKG_FIXUP:=autoreconf 
+
 PKG_INSTALL:=1
 
 include $(INCLUDE_DIR)/package.mk
